@@ -1,0 +1,31 @@
+START
+
+Inisialisasi data buku
+
+DO
+    Tampilkan menu:
+        1. Tambah buku
+        2. Lihat buku
+        3. Pinjam buku
+        4. Kembalikan buku
+        5. Keluar
+
+    Input pilihan
+
+    IF pilihan == 1 THEN
+        Proses tambah buku
+    ELSE IF pilihan == 2 THEN
+        Proses lihat buku
+    ELSE IF pilihan == 3 THEN
+        Proses pinjam buku
+    ELSE IF pilihan == 4 THEN
+        Proses kembalikan buku
+    ELSE IF pilihan == 5 THEN
+        Tampilkan pesan keluar
+    ELSE
+        Tampilkan pesan salah pilih
+    ENDIF
+
+WHILE pilihan != 5
+
+END
