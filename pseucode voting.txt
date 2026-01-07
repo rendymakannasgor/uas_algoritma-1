@@ -1,0 +1,35 @@
+START
+
+Deklarasi variabel:
+    jumlahMurid
+    userSukai ← 0
+    userTidak ← 0
+    pilihan
+
+Tampilkan "Jumlah murid:"
+Input jumlahMurid
+
+FOR i ← 1 TO jumlahMurid DO
+    Tampilkan "Murid i (1-Sukai, 0-Tidak Sukai):"
+    Input pilihan
+
+    IF pilihan == 1 THEN
+        userSukai ← userSukai + 1
+    ELSE
+        userTidak ← userTidak + 1
+    ENDIF
+END FOR
+
+Tampilkan "Hasil Voting"
+Tampilkan "Sukai:", userSukai
+Tampilkan "Tidak Sukai:", userTidak
+
+IF userSukai > userTidak THEN
+    Tampilkan "Keputusan: Disetujui"
+ELSE IF userTidak > userSukai THEN
+    Tampilkan "Keputusan: Tidak Disetujui"
+ELSE
+    Tampilkan "Keputusan: Seri"
+ENDIF
+
+END
